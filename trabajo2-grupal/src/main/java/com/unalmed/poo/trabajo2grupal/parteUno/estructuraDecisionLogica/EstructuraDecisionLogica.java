@@ -8,32 +8,33 @@ public class EstructuraDecisionLogica{
 
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
+        // Nota: Para cada uno de los ejercicios, ejecutar una por una, es decir, tener solo una des-comentada a la vez.
+
         System.out.println("|--Ejercicio Resuelto #7--|");
         EjercicioResueltoN7();
-        System.out.println("|--Ejercicio Resuelto #10--|");
-        EjercicioResueltoN10();
-        System.out.println("|--Ejercicio Resuelto #11--|");
-        EjercicioResueltoN11();
-        System.out.println("|--Ejercicio Resuelto #12--|");
-        EjercicioResueltoN12();
-        System.out.println("|--Ejercicio Resuelto #13--|");
-        EjercicioResueltoN13();
-        System.out.println("|--Ejercicio Resuelto #14--|");
-        EjercicioResueltoN14();
-        System.out.println("|--Ejercicio Resuelto #15--|");
-        EjercicioResueltoN15();
-        System.out.println("|--Ejercicio Propuesto #22--|");
-        EjercicioPropueestoN22();
-        System.out.println("|--Ejercicio Propuesto #23--|");
-        EjercicioPropueestoN23();
-        System.out.println("|--Ejercicio Propuesto #24--|");
-        EjercicioPropueestoN24();
+        // System.out.println("|--Ejercicio Resuelto #10--|");
+        // EjercicioResueltoN10();
+        // System.out.println("|--Ejercicio Resuelto #11--|");
+        // EjercicioResueltoN11();
+        // System.out.println("|--Ejercicio Resuelto #12--|");
+        // EjercicioResueltoN12();
+        // System.out.println("|--Ejercicio Resuelto #13--|");
+        // EjercicioResueltoN13();
+        // System.out.println("|--Ejercicio Resuelto #14--|");
+        // EjercicioResueltoN14();
+        // System.out.println("|--Ejercicio Resuelto #15--|");
+        // EjercicioResueltoN15();
+        // System.out.println("|--Ejercicio Propuesto #22--|");
+        // EjercicioPropueestoN22();
+        // System.out.println("|--Ejercicio Propuesto #23--|");
+        // EjercicioPropueestoN23();
+        // System.out.println("|--Ejercicio Propuesto #24--|");
+        // EjercicioPropueestoN24();
     }
 
     public static void EjercicioResueltoN7() {
         // Hacer un algoritmo que, dados dos valores numéricos A y B, escriba un mensaje diciendo 
         // si A es mayor, menor o igual a B.
-
         System.out.print("Dame el valor de un numero: ");
         Integer A = input.nextInt();
         System.out.print("Dame el valor de otro numero: ");
@@ -64,11 +65,10 @@ public class EstructuraDecisionLogica{
         // • Nombres. 
         // • Pago de matrícula
         Double pago = 50000.0;
-
         System.out.print("Numero de Inscripcion: ");
-        String numeroIncripcion = input.next();
+        String numeroIncripcion = input.nextLine();
         System.out.print("Nombre: ");
-        String nombreEstudiante = input.next();
+        String nombreEstudiante = input.nextLine();
         System.out.print("Valor Patrimonio: ");
         Double valorPatrimonio = input.nextDouble();
         System.out.print("Estrato: ");
@@ -81,12 +81,12 @@ public class EstructuraDecisionLogica{
         System.out.printf("El estudiante con numero de inscripcion %s, nombre: %s debe pagar $%.3f.", 
         numeroIncripcion, nombreEstudiante, pago);
         System.out.println();
+        
     }
 
     public static void EjercicioResueltoN11() {
         // Escribir un algoritmo que acepte tres números enteros diferentes y muestre el mayor de  
         // ellos
-
 
         ArrayList<Integer> numeros = new ArrayList<Integer>();
         for (int i = 0; i < 3; i++){
@@ -121,9 +121,8 @@ public class EstructuraDecisionLogica{
         // que se paga una hora normal y el resto al triple. Del trabajador se conocen los siguientes 
         // datos: nombres, número de horas trabajadas en la semana y valor recibido por una hora 
         // normal de trabajo.
-
         System.out.print("Nombre del Trabajador: ");
-        String nombreTrabajador = input.next();
+        String nombreTrabajador = input.nextLine();
         System.out.print("Horas Trabajadas: ");
         Integer horasTrabajadas = input.nextInt();
         System.out.print("Valor Hora: ");
@@ -208,7 +207,6 @@ public class EstructuraDecisionLogica{
         // al finalizar el período. 
 
 
-
         System.out.print("Ventas Departamento 1: ");
         Double vDepa1 = input.nextDouble();
         System.out.print("Ventas Departamento 2: ");
@@ -245,7 +243,6 @@ public class EstructuraDecisionLogica{
         // Se tienen cuatro esferas (A, B, C, D) de las cuales se sabe que tres son de igual peso y una 
         // diferente. Elaborar un algoritmo que determine cuál es la esfera diferente y si es de mayor 
         // o menor peso.
-
 
         System.out.print("Peso de A: ");
         double pesoA = input.nextDouble();
@@ -301,9 +298,8 @@ public class EstructuraDecisionLogica{
         // número de horas trabajadas en el mes; escriba su nombre y salario mensual si éste es mayor 
         // de $450.000, de lo contrario escriba sólo el nombre
 
-
         System.out.print("Nombre Empleado: ");
-        String nombreEmpleado = input.next();
+        String nombreEmpleado = input.nextLine();
         System.out.print("Pago Por Hora: ");
         Double salarioEmpleadoHora = input.nextDouble();
         System.out.print("Horas Trabjadas Al Mes: ");
@@ -322,7 +318,6 @@ public class EstructuraDecisionLogica{
     public static void EjercicioPropueestoN23() {
         // Dados los valores A, B y C que son los parámetros de una ecuación de segundo grado, 
         // elaborar un algoritmo para hallar las posibles soluciones de dicha ecuación. 
-
 
 
         System.out.print("Dame el valor de A (No puede ser 0): ");
@@ -362,7 +357,6 @@ public class EstructuraDecisionLogica{
         // la esfera de mayor peso
 
 
-
         System.out.print("Dame el peso de A: ");
         Double pesoA = input.nextDouble();
         System.out.print("Dame el peso de B: ");
@@ -370,7 +364,6 @@ public class EstructuraDecisionLogica{
         System.out.print("Dame el peso de C: ");
         Double pesoC = input.nextDouble();
 
-        input.close();
 
         String bolaMayor = "A";
         Double pesoMayor = pesoA;
@@ -386,6 +379,7 @@ public class EstructuraDecisionLogica{
         } 
 
         System.out.printf("La bola de mayor peso es la %s con un peso de %.2f", bolaMayor, pesoMayor);
+        input.close();
         System.out.println();
     }
 
